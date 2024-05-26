@@ -4,7 +4,6 @@
 # Compare la dispersión, el mejor rendimiento académico de las notas de las tres secciones en un
 # diagrama de cajas.
 
-
 # Introducir la data: 
 
 # Notas
@@ -14,4 +13,3 @@ C<-c(11,10,13,16,18,10,15,16,19,20,18,17,15,13,12,14)
 
 # Hallamos el diagrama de cajas
 boxplot(A,B,C,horizontal = TRUE)
-
