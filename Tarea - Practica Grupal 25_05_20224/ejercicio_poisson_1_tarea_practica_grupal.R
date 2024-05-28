@@ -3,7 +3,7 @@
 # Un vendedor de seguros de vida vende un promedio de 4 polizas
 # por semana, Calcular la probabilidad de:
 
-# 1) Que venda alguna pólizas en una semana
+# 1) Que venda algunas pólizas en una semana
 # 2) Que venda 2 o más pólizas, pero menos de 5 (en una semana)
 # 3) Suponiendo que hay 5 días de trabajo por semana, ¿cuál es la probabilidad de que en un día dado venda una póliza?
 # 4) Calcule la media, la varianza y la desviación estándar de la distribución de probabilidad que se infiere de este problema
@@ -11,14 +11,13 @@
 library(dplyr)
 
 # Parámetro de la distribución de Poisson
-# X = Número de polizas vendidas en 7 dias(1 semana)
 lambda <- 4
 
 #  Que venda algunas pólizas en una semana
 p_al_menos_una <- 1 - dpois(0, 4)
 p <- round(p_al_menos_una,4)
-cat("Probabilidad de que venda alguna pólizas en una semana ", p_al_menos_una, "\n")
-cat("Probabilidad de que venda alguna pólizas en una semana (4 decimales):", p, "\n")
+cat("Probabilidad de que venda algunas pólizas en una semana ", p_al_menos_una, "\n")
+cat("Probabilidad de que venda algunas pólizas en una semana (4 decimales):", p, "\n")
 
 # Probabilidad de vender 2, 3, o 4 pólizas en una semana
 p_2 <- dpois(2,lambda)
