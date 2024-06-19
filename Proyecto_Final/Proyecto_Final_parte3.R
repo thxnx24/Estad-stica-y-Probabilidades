@@ -44,4 +44,4 @@ boxplot(df$Horas_Programando,
         col = "lightblue",
         border = "black",
         horizontal = TRUE)
-
+  

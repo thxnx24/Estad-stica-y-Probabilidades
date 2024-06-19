@@ -91,3 +91,4 @@ print(resultados)
 library(modeest)
 moda <- mfv(horas_programando)
 cat("La moda, es decir las horas con las que mas frecuencia programan los encuestados es de:", moda)
+
